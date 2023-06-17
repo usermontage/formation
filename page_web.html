@@ -2,6 +2,59 @@
 <html>
 <head>
   <title>Ma première page web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    select {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
   <script>
     function redirect(value) {
       if (value !== "") {
@@ -11,12 +64,10 @@
   </script>
 </head>
 <body>
-  <h1>Bienvenue sur la page web de formation de la commission audiovisuelle </h1>
-  <p>Cette page a été mise en place par la commission audiovisuelle du Dahira Jawartoulah de Paris dans le but de
-    faciliter la formation à toutes les personnes souhaitant intégrer cette commission. 
-  </p>
+  <h1>Bienvenue sur la page web de formation de la commission audiovisuelle</h1>
+  <p>Cette page a été mise en place par la commission audiovisuelle du Dahira Jawartoulah de Paris dans le but de faciliter la formation à toutes les personnes souhaitant intégrer cette commission.</p>
   <img src="./images/logoDTV.jpeg">
-  
+
   <h2>Lexique de la formation</h2>
   <ul>
     <li>I. Introduction à Premiere Pro</li>
@@ -25,101 +76,94 @@
     <li>IV. Audio</li>
     <li>V. Exportation du projet final</li>
   </ul>
-  
-  <p>Choisissez une chapitre:</p>
-  
+
+  <p>Choisissez un chapitre :</p>
+
   <select onchange="redirect(this.value)">
     <option value="">Sélectionnez une option</option>
     <option value="C:\Users\geographie\Downloads\Chapitre 1.html">Chapitre I</option>
-    <option value="page2.html">Chapitre I</option>
-    <option value="page3.html">Chapitre II</option>
-    <option value="page2.html">Chapitre III</option>
-    <option value="page3.html">Chapitre IV</option>
-    <option value="page3.html">Chapitre V</option>
+    <option value="page2.html">Chapitre II</option>
+    <option value="page3.html">Chapitre III</option>
+    <option value="page4.html">Chapitre IV</option>
+    <option value="page5.html">Chapitre V</option>
   </select>
 
-  
-  <h3>I.  Introduction à Premiere Pro</h3>
-  <h4>1.  Présentation de l'interface utilisateur</h4>
+
+  <h3>I. Introduction à Premiere Pro</h3>
+  <h4>1. Présentation de l'interface utilisateur</h4>
   <p>a. Panneau de projet<br>
-    b.  Moniteur source<br>
-    c.  Moniteur du programme<br>
-    b.  Timeline (Montage)<br>
-    e.  Panneau Effets<br>
-    </p>
+    b. Moniteur source<br>
+    c. Moniteur du programme<br>
+    d. Timeline (Montage)<br>
+    e. Panneau Effets<br>
+  </p>
 
-  <p>Voici un lien vers une vidéos d'introduction à Premiere Pro :</p>
-  <a href="https://www.youtube.com/watch?v=A_7elca3vr0">Cliquez ici</a> pour visualiser la vidéo V1 de la chapitre I.
+  <p>Voici un lien vers une vidéo d'introduction à Premiere Pro :</p>
+  <a href="https://www.youtube.com/watch?v=A_7elca3vr0">Cliquez ici</a> pour visualiser la vidéo V1 du chapitre I.
 
-  
-  <h4>2.  Configuration du projet</h4>
-    a. Création d'un nouveau projet<br>
-    b.  Réglage des paramètres du projet (résolution, fréquence d'images, etc.)
- 
-  <p>Voici un lien vers une vidéos de configuration de projets  :</p>
-  <a href="https://www.youtube.com/watch?v=A_7elca3vr0">Cliquez ici</a> pour visualiser la vidéo V2 de la chapitre II.
 
-  <h4>3.  Importation de fichiers multimédias</h4>
-  a.  Importation de vidéos, images et fichiers audio<br>
-  b.  Organisation des fichiers dans le panneau de projet<br>
-  c.  Visualisation des sources <br>
+  <h4>2. Configuration du projet</h4>
+  <p>a. Création d'un nouveau projet<br>
+    b. Réglage des paramètres du projet (résolution, fréquence d'images, etc.)</p>
 
-  <p>Voici un lien vers une vidéos montrant comment importer un fichier  :</p>
+  <p>Voici un lien vers une vidéo de configuration de projets :</p>
+  <a href="https://www.youtube.com/watch?v=A_7elca3vr0">Cliquez ici</a> pour visualiser la vidéo V2 du chapitre II.
+
+  <h4>3. Importation de fichiers multimédias</h4>
+  <p>a. Importation de vidéos, images et fichiers audio<br>
+    b. Organisation des fichiers dans le panneau de projet<br>
+    c. Visualisation des sources </p>
+
+  <p>Voici un lien vers une vidéo montrant comment importer un fichier :</p>
   <a href="https://www.youtube.com/watch?v=A_7elca3vr0">Cliquez ici</a> pour visualiser la vidéo V3.
 
   <h3>II. Fondamentaux du montage vidéo</h3>
-  <h4>1.  Montage dans la timeline</h4>
-  a. Ajout de clips à la timeline<br>
-  b.  Déplacement, suppression et découpage des clips<br>
-  c.  Utilisation des outils de montage (raclure, déplacement, etc.)<br>
+  <h4>1. Montage dans la timeline</h4>
+  <p>a. Ajout de clips à la timeline<br>
+    b. Déplacement, suppression et découpage des clips<br>
+    c. Utilisation des outils de montage (raclure, déplacement, etc.)<br></p>
 
-  <p>Voici un lien vers une vidéos montrant les fondamentaux du montage dans la timeline :</p>
+  <p>Voici un lien vers une vidéo montrant les fondamentaux du montage dans la timeline :</p>
   <a href="https://www.youtube.com/watch?v=A_7elca3vr0">Cliquez ici</a> pour visualiser la vidéo V4.
 
-  <h4>2.  Coupe, suppression et déplacement de clips</h4>
-  a. Utilisation des raccourcis clavier pour couper et supprimer des segments<br>
-  b. Déplacement précis des clips sur la timeline<br>
-  c. Utilisation des fonctions d'alignement des clips<br>
+  <h4>2. Coupe, suppression et déplacement de clips</h4>
+  <p>a. Utilisation des raccourcis clavier pour couper et supprimer des segments<br>
+    b. Déplacement précis des clips sur la timeline<br>
+    c. Utilisation des fonctions d'alignement des clips<br></p>
 
-  <h3>III.  Transitions et effets basiques</h3>
-  <h4>1.  Ajout de transitions entre les clips</h4>
-  a. Utilisation des transitions prédéfinies<br>
-  b. Réglage de la durée et du style des transitions<br>
+  <h3>III. Transitions et effets basiques</h3>
+  <h4>1. Ajout de transitions entre les clips</h4>
+  <p>a. Utilisation des transitions prédéfinies<br>
+    b. Réglage de la durée et du style des transitions<br></p>
 
-  <h4>2.  Application d'effets de base</h4>
-  a. Utilisation des effets prédéfinis (luminosité, contraste, saturation, etc.)<br>
-  b. Réglage des paramètres d'effets<br>
-  c. Superposition d'effets sur les clips<br>
+  <h4>2. Application d'effets de base</h4>
+  <p>a. Utilisation des effets prédéfinis (luminosité, contraste, saturation, etc.)<br>
+    b. Réglage des paramètres d'effets<br>
+    c. Superposition d'effets sur les clips<br></p>
 
-  <h3>IV.  Audio</h3>
-  <h4>1.  Importation et ajout de pistes audio</h4>
-  a. Importation de fichiers audio<br>
-  b. Ajout de pistes audio à la timeline<br>
+  <h3>IV. Audio</h3>
+  <h4>1. Importation et ajout de pistes audio</h4>
+  <p>a. Importation de fichiers audio<br>
+    b. Ajout de pistes audio à la timeline<br></p>
 
-  <h4>2.  Réglage du volume et des transitions audio</h4>
-  a. Réglage du volume des clips audio<br>
-  b. Utilisation de fondu pour les transitions audio<br>
+  <h4>2. Réglage du volume et des transitions audio</h4>
+  <p>a. Réglage du volume des clips audio<br>
+    b. Utilisation de fondu pour les transitions audio<br></p>
 
-  <h4>3.  Utilisation de la fonction de mixage audio</h4>
-  a. Ajustement fin du mixage audio dans le panneau Mixage audio<br>
-  b. Utilisation des effets audio prédéfinis (égaliseur, réverbération, etc.)<br>
+  <h4>3. Utilisation de la fonction de mixage audio</h4>
+  <p>a. Ajustement fin du mixage audio dans le panneau Mixage audio<br>
+    b. Utilisation des effets audio prédéfinis (égaliseur, réverbération, etc.)<br></p>
 
   <h3>V. Exportation du projet final</h3>
-  <h4>1.  Choix des paramètres d'exportation</h4>
-  a. Sélection du format de fichier de sortie (MP4, AVI, etc.)<br>
-  b. Réglage des paramètres de qualité vidéo<br>
+  <h4>1. Choix des paramètres d'exportation</h4>
+  <p>a. Sélection du format de fichier de sortie (MP4, AVI, etc.)<br>
+    b. Réglage des paramètres de qualité vidéo<br></p>
 
-  <h4>2.  Exportation dans différents formats</h4>
-  a. Exportation du projet pour différents médias (Web, DVD, etc.)<br>
-  b. Options d'exportation avancées (bitrate, résolution, etc.)<br>
+  <h4>2. Exportation dans différents formats</h4>
+  <p>a. Exportation du projet pour différents médias (Web, DVD, etc.)<br>
+    b. Options d'exportation avancées (bitrate, résolution, etc.)<br></p>
 
   <h4>3. Partager sur Youtube</h4>
-  
 
-
-
-  <title>Ma page web avec une liste déroulante</title>
-  
 </body>
 </html>
-
