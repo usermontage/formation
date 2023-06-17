@@ -1,1 +1,4 @@
-echo "TEst";
+<?php
+include('page_web.html');
+
+?>
